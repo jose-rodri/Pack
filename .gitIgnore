@@ -1,0 +1,19 @@
+
+# Pods
+Pods
+
+# *.xcworkspace
+
+*.xcworkspace
+.DS_Store
+
+# iOSInjectProject 
+# huella-azteca-ios-sdk-mascota
+# huella-azteca-ios-sdk-utils
+# huella-azteca-ios-sdk-login
+
+# Swift Package Manager
+#
+# Add this line if you want to avoid checking in source code from Swift Package Manager dependencies.
+ Packages/
+ Package.pins

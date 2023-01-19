@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HATextField" customModule="joserodriguez" customModuleProvider="target">
+            <connections>
+                <outlet property="buttonIcon" destination="cXW-ec-YYe" id="04p-My-SE3"/>
+                <outlet property="containerTextField" destination="W5R-d9-9jL" id="YQN-NO-iHc"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="vS4-jw-rfz"/>
+                <outlet property="iconButton" destination="cXW-ec-YYe" id="ECA-SM-785"/>
+                <outlet property="iconView" destination="v6G-j0-yY5" id="LoT-f0-gzw"/>
+                <outlet property="textField" destination="3v0-xe-gk6" id="7xV-1l-TVS"/>
+                <outlet property="viewtexField" destination="DGs-bN-9Yv" id="G38-Yr-ovI"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="488" height="80"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W5R-d9-9jL">
+                    <rect key="frame" x="0.0" y="0.0" width="488" height="80"/>
+                    <subviews>
+                        <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DGs-bN-9Yv">
+                            <rect key="frame" x="2" y="0.0" width="484" height="80"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="text prubas estamo" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3v0-xe-gk6">
+                                    <rect key="frame" x="0.0" y="0.0" width="484" height="80"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="3v0-xe-gk6" firstAttribute="leading" secondItem="DGs-bN-9Yv" secondAttribute="leading" id="3ef-M9-Y5Z"/>
+                                <constraint firstAttribute="trailing" secondItem="3v0-xe-gk6" secondAttribute="trailing" id="Afu-OW-Cci"/>
+                                <constraint firstAttribute="bottom" secondItem="3v0-xe-gk6" secondAttribute="bottom" id="Tqw-06-Cjt"/>
+                                <constraint firstItem="3v0-xe-gk6" firstAttribute="top" secondItem="DGs-bN-9Yv" secondAttribute="top" id="hrd-5b-d11"/>
+                            </constraints>
+                        </view>
+                        <view hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v6G-j0-yY5">
+                            <rect key="frame" x="448" y="28" width="24" height="24"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="D6V-2o-WIS">
+                                    <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
+                                </imageView>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="D6V-2o-WIS" secondAttribute="trailing" id="00o-ko-MW1"/>
+                                <constraint firstAttribute="bottom" secondItem="D6V-2o-WIS" secondAttribute="bottom" id="8m5-Ra-PWQ"/>
+                                <constraint firstItem="D6V-2o-WIS" firstAttribute="leading" secondItem="v6G-j0-yY5" secondAttribute="leading" id="aPc-s5-f5q"/>
+                                <constraint firstItem="D6V-2o-WIS" firstAttribute="top" secondItem="v6G-j0-yY5" secondAttribute="top" id="eBe-O4-otf"/>
+                                <constraint firstAttribute="width" constant="24" id="fLS-hq-A9t"/>
+                                <constraint firstAttribute="height" constant="24" id="jZW-AD-0VQ"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cXW-ec-YYe">
+                            <rect key="frame" x="408" y="0.0" width="80" height="80"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="80" id="TkB-nG-5mu"/>
+                            </constraints>
+                            <connections>
+                                <action selector="iconButtonAction:" destination="-1" eventType="touchUpInside" id="I3i-SD-k8A"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="cXW-ec-YYe" secondAttribute="trailing" id="2e8-6h-ook"/>
+                        <constraint firstAttribute="trailing" secondItem="v6G-j0-yY5" secondAttribute="trailing" constant="16" id="5hP-aj-QHH"/>
+                        <constraint firstItem="cXW-ec-YYe" firstAttribute="top" secondItem="W5R-d9-9jL" secondAttribute="top" id="7Vq-VG-gXj"/>
+                        <constraint firstAttribute="bottom" secondItem="DGs-bN-9Yv" secondAttribute="bottom" id="LeJ-GU-EoF"/>
+                        <constraint firstItem="DGs-bN-9Yv" firstAttribute="leading" secondItem="W5R-d9-9jL" secondAttribute="leading" constant="2" id="bhI-5K-la0"/>
+                        <constraint firstAttribute="bottom" secondItem="cXW-ec-YYe" secondAttribute="bottom" id="k2p-JN-Nl7"/>
+                        <constraint firstAttribute="trailing" secondItem="DGs-bN-9Yv" secondAttribute="trailing" constant="2" id="mWB-6k-7AQ"/>
+                        <constraint firstItem="v6G-j0-yY5" firstAttribute="centerY" secondItem="W5R-d9-9jL" secondAttribute="centerY" id="nTI-nU-1pd"/>
+                        <constraint firstItem="DGs-bN-9Yv" firstAttribute="top" secondItem="W5R-d9-9jL" secondAttribute="top" id="trg-dC-kxg"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.7725490196" green="0.79607843140000001" blue="0.87843137250000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <constraints>
+                <constraint firstItem="W5R-d9-9jL" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="BEu-0v-GYs"/>
+                <constraint firstItem="W5R-d9-9jL" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="MGn-HC-VGf"/>
+                <constraint firstAttribute="bottom" secondItem="W5R-d9-9jL" secondAttribute="bottom" id="bVb-z7-9Mu"/>
+                <constraint firstItem="W5R-d9-9jL" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="j3J-l3-eKj"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="186.25954198473281" y="-218.3098591549296"/>
+        </view>
+    </objects>
+</document>
